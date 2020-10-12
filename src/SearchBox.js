@@ -66,7 +66,7 @@ class SearchBox extends Component {
     render() {
         const { text } = this.state;
         return (
-            <div className="input-group input-group-lg mt-3">
+            <div className="input-group input-group-lg mt-4 mr-3">
                 <div className="input-group-prepend">
                     <button className="btn btn-primary search-btn">جستجو</button>
                 </div>

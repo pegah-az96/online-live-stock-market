@@ -16,7 +16,7 @@ class App extends Component {
                 </div>
             </div>
             <div className="row">
-                <div className="col-lg-7">
+                <div className="col-lg-7 ml-0 pl-0">
                     <img src={bg} alt="background" className="bg-image d-none d-lg-block"/>
                 </div>
                 <div className="col-lg-5">

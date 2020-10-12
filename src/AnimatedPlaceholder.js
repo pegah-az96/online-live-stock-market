@@ -50,12 +50,11 @@ class AnimatedPlaceholder extends Component {
     render() {
         return (
             <div className="container d-inline-block " dir="rtl">
-                <h6 className="text-right placeholder" dir="rtl">
-                    <strong>
+                <p className="text-right placeholder" dir="rtl">
                         <i className="fa fa-map-marker pl-2" />
-                        نام   <span id="target" className="px-2">شهر </span> خود را وارد کنید
-                    </strong>
-                </h6>
+                        {/*نام   <span id="target" className="px-2">شهر </span> خود را وارد کنید*/}
+                    نام شهر  خود را وارد کنید
+                </p>
             </div>
         );
     }

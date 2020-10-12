@@ -7,21 +7,19 @@ class MainText extends Component {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col text-right" dir="rtl">
-                        <h4 className="mt-5">پلتفرم هوشمند جستجوی گوسفند</h4>
-                        <h1 className="mt-3">
-                            <b>گوسفند خودتُ پیدا کن!</b>
-                        </h1>
+                    <div className="col text-right mt-5" dir="rtl">
+                        <span className="mt-5 mb-4 text-1">پلتفرم هوشمند جستجوی گوسفند</span>
+                        <span className="text-2">
+                            گوسفند خودتُ پیدا کن!
+                        </span>
                     </div>
                 </div>
                 <div className="row" >
                     <SearchBox/>
-                   <div className="col text-right mt-3" dir="rtl">
-                       <h6>
-                          <b>
+                   <div className="col text-right mt-4" dir="rtl">
+                       <span className="text-3">
                               به کمک فارمزی،به سادگی از بهترین دامداران منطقه خود گوسفند زنده بخرید و از خدمات ارسال رایگان به همراه قصاب بهره مند شوید.
-                          </b>
-                       </h6>
+                       </span>
                    </div>
                 </div>
             </div>

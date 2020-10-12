@@ -16,22 +16,23 @@ body{
 .logo{
 }
 .bg-image{
-    margin-top: -150px;
-    margin-left: -100px;
+    margin-top: -200px;
+    margin-left: -135px;
 }
 .bg-sm{
-    margin-left: -200px;
+    margin-left: -235px;
     margin-top: -120px;
 }
 
-/*changePlaceholder component*/
+/*AnimatedPlaceholder component*/
 .placeholder{
+    font-size: 0.9rem;
     position: relative;
     z-index: 10;
     margin-top: -35px;
     color: #999;
 }
-/*search component*/
+/*searchBox component*/
 .search-btn{
     background-color: #5452e2;
 }
@@ -55,4 +56,30 @@ ul li:hover{
     background-color: #5452e2;
     color: #fff;
 }
-
+/*MainText component*/
+.text-1{
+    display: block;
+    font-size: 1.125rem;
+}
+.text-2{
+    font-size: 2.1rem;
+    font-weight: 900;
+}
+.text-3{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .text-1{
+        font-size: 0.875rem;
+    }
+    .text-2{
+        font-size: 1.75rem;
+    }
+    .text-3{
+        font-size: 0.8rem;
+    }
+    .placeholder{
+        font-size: 0.8rem;
+    }
+}
