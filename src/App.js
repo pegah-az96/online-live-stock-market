@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 //logo and background images
 import logo from './images/logo.png'
 import bg from './images/background.png'
-import bg_sm from './images/background-sm.png'
+import bg_sm from './images/background -sm.png'
 //components
 import MainText from "./MainText";
 

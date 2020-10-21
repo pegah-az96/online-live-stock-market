@@ -1,22 +1,40 @@
 import React, {Component} from 'react';
+// import axios from 'axios'
 import AnimatedPlaceholder from "./AnimatedPlaceholder";
-import countries from "./Cities";
+import {cities} from "./FetchApi";
 
 class SearchBox extends Component {
     constructor(props){
         super(props)
         this.state = {
+            // cities :[],
             suggestions: [],
             text: ''
         }
     }
+    // componentDidMount() {
+    //     axios.get('https://hidden-shelf-13371.herokuapp.com/locations')
+    //         //https://api.mocki.io/v1/b043df5a
+    //         .then( response=> {
+    //             let data= response.data;
+    //             let citynames = []
+    //             for (let i of data){
+    //                 citynames.push(i.city +" " +  i.county + " " + i.province)
+    //             }
+    //             this.setState(()=>({cities: citynames}))
+    //         })
+    //         .catch(error => {
+    //             console.log(error);
+    //         })
+    // }
 
     onTextChange = (e) => {
+        // let {cities} =this.state
         const value = e.target.value;
         let suggestions = [];
         if(value.length > 0){
             const regex = new RegExp(`^${value}`, 'i');
-            suggestions = countries.sort().filter(v => regex.test(v))
+            suggestions = cities.filter(v => regex.test(v))
         }
 
         this.setState(() => ({
