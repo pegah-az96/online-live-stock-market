@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const getCity =()=>{
+export const getCity=()=>{
     let cities = []
     axios.get('https://hidden-shelf-13371.herokuapp.com/locations')
         //https://api.mocki.io/v1/b043df5a
@@ -16,6 +16,8 @@ const getCity =()=>{
         })
     return cities
 }
-export const cities= getCity()
+
+
+ export const cities= getCity()
 
 
