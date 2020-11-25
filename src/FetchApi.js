@@ -8,7 +8,8 @@ export const getCity=()=>{
             let data= response.data;
 
             for (let i of data){
-                cities.push(i.city +" " +  i.county + " " + i.province)
+                cities.push({name :i.city + " " + i.county + " " + i.province,locationId:i.locationId})
+                //{name :i.city + " " + i.county + " " + i.province,locationId:i.locationId}
             }
         })
         .catch(error => {

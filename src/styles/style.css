@@ -35,6 +35,13 @@ body{
     color: #999;
 }
 /*searchBox component*/
+::placeholder {
+    font-size: 1rem;
+    color: #999;
+}
+.icon{
+    font-family: FontAwesome;
+}
 .search-btn{
     background-color: #5452e2;
 }
@@ -72,6 +79,31 @@ ul li:hover{
     font-size: 0.9rem;
     font-weight: 600;
 }
+/*products component*/
+#products-header{
+    direction: rtl;
+    height: 250px;
+    /*background-image: url("../images/h.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: 0px 600px;*/
+    background: #becedd;
+    color: #ffffff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+.darkOverlay{
+    /*background: rgba(0,0,0,0.3);*/
+    /*height: 250px;*/
+}
+.breadcrumb{
+    background: transparent;
+}
+.breadcrumb-item a{
+    color: white;
+    text-decoration: none;
+}
+
+
 @media (max-width: 768px) {
     .text-1{
         font-size: 0.875rem;
