@@ -1,18 +1,33 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
-//import axios from 'axios'
+import axios from 'axios'
 
 class Products extends Component {
-    // componentDidMount() {
-    //     this.getProducts()
-    // }
-    // getProducts=()=>{
-    //     axios.post('')
-    // }
+    getProducts=()=>{
+        let city =this.props.location.locId
+        console.log(city)
+        //https://calm-garden-76853.herokuapp.com/locations/products?locationId=city_8c90cda84b073f84695afe65a98d6c4958fb2075
+        axios.get('https://calm-garden-76853.herokuapp.com/locations/products?locationId=city_8c90cda84b073f84695afe65a98d6c4958fb2075')
+            // null,
+            // { params: city}
+            .then( response=> {
+                let data= response.data;
+                console.log(data)
+                for (let i of data){
+                    return(
+                        <li>{i.productName}</li>
+                    );
+                }
+
+            })
+            .catch(error => {
+                console.log(error);
+            })
+
+    }
 
     render() {
-        let city =this.props.location.city
-        console.log(city)
+
         return (
             <div>
                 <header id="products-header">
@@ -28,8 +43,17 @@ class Products extends Component {
                                         <Link to="/products">فروشندگان</Link>
                                     </li>
                                 </ol>
+                                <ul>
+                                    {this.getProducts()}
+                                </ul>
                             </div>
                         </div>
+                       <div className="row">
+                           <ul>
+                               {this.getProducts()}
+                           </ul>
+
+                       </div>
                     </div>
                 </header>
 

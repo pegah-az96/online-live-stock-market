@@ -36,11 +36,9 @@ body{
 }
 /*searchBox component*/
 ::placeholder {
-    font-size: 1rem;
+    font-family:IRANYekan, FontAwesome;
+    font-size: 0.9rem;
     color: #999;
-}
-.icon{
-    font-family: FontAwesome;
 }
 .search-btn{
     background-color: #5452e2;

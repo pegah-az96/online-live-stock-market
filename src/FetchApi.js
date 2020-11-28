@@ -1,15 +1,17 @@
 import axios from 'axios'
+//import fs from 'fs'
 
 export const getCity=()=>{
     let cities = []
-    axios.get('https://hidden-shelf-13371.herokuapp.com/locations')
-        //https://api.mocki.io/v1/b043df5a
+    // fs.readFile('../public/db.json')
+    axios.get('https://calm-garden-76853.herokuapp.com/locations')
+        //https://hidden-shelf-13371.herokuapp.com/locations
+        //https://calm-garden-76853.herokuapp.com/locations
         .then( response=> {
             let data= response.data;
 
             for (let i of data){
                 cities.push({name :i.city + " " + i.county + " " + i.province,locationId:i.locationId})
-                //{name :i.city + " " + i.county + " " + i.province,locationId:i.locationId}
             }
         })
         .catch(error => {
