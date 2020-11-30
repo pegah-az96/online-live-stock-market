@@ -63,14 +63,12 @@ class SearchBox extends Component {
         });
     }
     render() {
-        // console.log()
         const { text,locationId } = this.state;
         console.log(text,locationId)
         return (
             <div className="input-group input-group-lg mt-4 mr-3">
                 <div className="input-group-prepend">
                     <Link to={{pathname: `/products`, locId: locationId}} className="btn btn-primary search-btn">جستجو</Link>
-                    {/*<button className="btn btn-primary search-btn" onClick={this.getCity.bind(this)}>جستجو</button>*/}
                 </div>
                 <input id="searchInput" type="text" name="searchInput" className="form-control search icon" placeholder="&#xF041; نام شهر خود را وارد کنید" dir="rtl" value={text} onChange={this.onTextChange} />
                 {this.renderSuggestions()}

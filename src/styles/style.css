@@ -12,7 +12,7 @@
 body{
     font-family: "IRANYekan";
 }
-/*App component*/
+/*Home component*/
 .logo{
 }
 .bg-image{
@@ -34,6 +34,7 @@ body{
     margin-top: -35px;
     color: #999;
 }
+
 /*searchBox component*/
 ::placeholder {
     font-family:IRANYekan, FontAwesome;
@@ -64,6 +65,7 @@ ul li:hover{
     background-color: #5452e2;
     color: #fff;
 }
+
 /*MainText component*/
 .text-1{
     display: block;
@@ -77,6 +79,7 @@ ul li:hover{
     font-size: 0.9rem;
     font-weight: 600;
 }
+
 /*products component*/
 #products-header{
     direction: rtl;
@@ -89,10 +92,6 @@ ul li:hover{
     border-bottom: 1px solid #eee;
     box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
 }
-.darkOverlay{
-    /*background: rgba(0,0,0,0.3);*/
-    /*height: 250px;*/
-}
 .breadcrumb{
     background: transparent;
 }
@@ -100,7 +99,18 @@ ul li:hover{
     color: white;
     text-decoration: none;
 }
-
+.products-card{
+    height: 400px;
+    margin-right: 7px;
+    margin-left: 7px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+.products-card-img{
+    height: 200px;
+    border-radius: 10px;
+    width: 90%;
+    margin-top: -30px;
+}
 
 @media (max-width: 768px) {
     .text-1{
