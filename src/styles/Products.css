@@ -1,0 +1,36 @@
+/*products component*/
+#products-header{
+    direction: rtl;
+    height: 250px;
+    /*background-image: url("../images/h.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: 0px 600px;*/
+    background: #becedd;
+    color: #ffffff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+.breadcrumb{
+    background: transparent;
+}
+.breadcrumb-item a{
+    color: white;
+    text-decoration: none;
+}
+.products-card{
+    height: 300px;
+    margin-right: 7px;
+    margin-left: 7px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    border-radius: 60px 40px 30px 60px;
+}
+.products-card-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-top: -50px;
+    margin-right: -5px;
+}
+.btn-rounded{
+    border-radius: 12px;
+}

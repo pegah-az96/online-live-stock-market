@@ -1,3 +1,8 @@
+@import "MainText.css";
+@import "SearchBox.css";
+@import "Products.css";
+@import "ProductDetail.css";
+
 @font-face {
     font-family: "IRANYekan";
     font-style: normal;
@@ -24,105 +29,4 @@ body{
     max-height: 100%;
     /*margin-left:  -90px;*/
     /*margin-top: -120px;*/
-}
-
-/*AnimatedPlaceholder component*/
-.placeholder{
-    font-size: 0.9rem;
-    position: relative;
-    z-index: 10;
-    margin-top: -35px;
-    color: #999;
-}
-
-/*searchBox component*/
-::placeholder {
-    font-family:IRANYekan, FontAwesome;
-    font-size: 0.9rem;
-    color: #999;
-}
-.search-btn{
-    background-color: #5452e2;
-}
-ul {
-    background-color: #fff;
-    position: absolute;
-    z-index: 100;
-    margin-left: auto;
-    margin-top: 50px;
-    padding: 0;
-    max-height: 390px;
-    overflow-y: auto;
-    padding: 5px 5px 0 5px;
-    width: inherit;
-}
-ul li{
-    text-align: right;
-    padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-ul li:hover{
-    background-color: #5452e2;
-    color: #fff;
-}
-
-/*MainText component*/
-.text-1{
-    display: block;
-    font-size: 1.125rem;
-}
-.text-2{
-    font-size: 2.1rem;
-    font-weight: 900;
-}
-.text-3{
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-/*products component*/
-#products-header{
-    direction: rtl;
-    height: 250px;
-    /*background-image: url("../images/h.jpg");*/
-    /*background-size: cover;*/
-    /*background-position: 0px 600px;*/
-    background: #becedd;
-    color: #ffffff;
-    border-bottom: 1px solid #eee;
-    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
-}
-.breadcrumb{
-    background: transparent;
-}
-.breadcrumb-item a{
-    color: white;
-    text-decoration: none;
-}
-.products-card{
-    height: 400px;
-    margin-right: 7px;
-    margin-left: 7px;
-    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
-}
-.products-card-img{
-    height: 200px;
-    border-radius: 10px;
-    width: 90%;
-    margin-top: -30px;
-}
-
-@media (max-width: 768px) {
-    .text-1{
-        font-size: 0.875rem;
-    }
-    .text-2{
-        font-size: 1.75rem;
-    }
-    .text-3{
-        font-size: 0.8rem;
-    }
-    .placeholder{
-        font-size: 0.8rem;
-    }
 }

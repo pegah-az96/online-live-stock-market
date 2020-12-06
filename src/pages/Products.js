@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import axios from 'axios'
+import MakeProductCart from "../Components/MakeProductCart";
 
 class Products extends Component {
     constructor(props) {
@@ -12,15 +13,18 @@ class Products extends Component {
     componentDidMount() {
         this.getProducts()
     }
+    componentWillUnmount() {
+        this.setState(()=>{
+            return{
+                data:[]
+            }
+        })
+    }
 
     getProducts=()=>{
         let city =this.props.location.locId
         console.log(city)
-        // axios.get(`http://roocket.org/api/user?api_token=${apiToken}`)
-        //https://calm-garden-76853.herokuapp.com/locations/products?locationId=city_8c90cda84b073f84695afe65a98d6c4958fb2075
         axios.get('https://calm-garden-76853.herokuapp.com/locations/products?locationId=city_8c90cda84b073f84695afe65a98d6c4958fb2075')
-            // null,
-            // { params: city}
             .then( response=> {
                 let data= response.data;
                this.setState(()=>{
@@ -38,17 +42,7 @@ class Products extends Component {
     showProducts=()=>{
         const {data}=this.state;
         return (
-            data.map((item, index) => (<div key={index} className="col-md-4 my-5">
-                <div className="card products-card" dir="rtl">
-                    <img src={item.MainImageUrl} className="card-img-top mx-auto products-card-img" alt=""/>
-                    <div className="card-body text-right" >
-                        <h5 className="card-title">{item.productName}</h5>
-                        <p className="card-text" style={{height:"100px",overflow:"hidden"}}>{item.productDescription.substring(0,70)}...</p>
-                        <Link to={`product/${item.id}`} className="btn btn-info btn-sm mb-1" style={{float:"left"}}>مشاهده</Link>
-                        {/*<button className="btn btn-info btn-sm mb-1" style={{float:"left"}}>مشاهده</button>*/}
-                    </div>
-                </div>
-            </div>))
+            data.map((item, index) => (<MakeProductCart key={index} item={item}/>))
         );
     }
 

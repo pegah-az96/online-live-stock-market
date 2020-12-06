@@ -1,0 +1,24 @@
+/*MainText component*/
+.text-1{
+    display: block;
+    font-size: 1.125rem;
+}
+.text-2{
+    font-size: 2.1rem;
+    font-weight: 900;
+}
+.text-3{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .text-1{
+        font-size: 0.875rem;
+    }
+    .text-2{
+        font-size: 1.75rem;
+    }
+    .text-3{
+        font-size: 0.8rem;
+    }
+}
