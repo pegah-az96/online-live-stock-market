@@ -68,7 +68,7 @@ class SearchBox extends Component {
         return (
             <div className="input-group input-group-lg mt-4 mr-3">
                 <div className="input-group-prepend">
-                    <Link to={{pathname: `/products`, locId: locationId}} className="btn btn-primary search-btn">جستجو</Link>
+                    <Link to={{pathname: `/products`, locId: locationId}} className="btn search-btn">جستجو</Link>
                 </div>
                 <input id="searchInput" type="text" name="searchInput" className="form-control search icon" placeholder="&#xF041; نام شهر خود را وارد کنید" dir="rtl" value={text} onChange={this.onTextChange} />
                 {this.renderSuggestions()}

@@ -16,8 +16,13 @@
 }
 body{
     font-family: "IRANYekan";
+    overflow-x: hidden;
+
 }
 /*Home component*/
+.navBar1{
+    z-index: 10;
+}
 .logo{
 }
 .bg-image{
@@ -29,4 +34,13 @@ body{
     max-height: 100%;
     /*margin-left:  -90px;*/
     /*margin-top: -120px;*/
+}
+.greenDevider{
+    background: #284d46;
+    height: 85px;
+    margin-top: -85px;
+}
+.greenDeviderSm{
+    background: #284d46;
+    height: 50px;
 }

@@ -8,7 +8,7 @@ class MainText extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col text-right mt-5" dir="rtl">
-                        <span className="mt-5 mb-4 text-1">پلتفرم هوشمند جستجوی گوسفند</span>
+                        <span className="mb-4 text-1">پلتفرم هوشمند جستجوی گوسفند</span>
                         <span className="text-2">
                             گوسفند خودتُ پیدا کن!
                         </span>
