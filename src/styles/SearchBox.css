@@ -8,7 +8,7 @@
     background-color: #284d46;
     color: white;
 }
-ul {
+.cities {
     background-color: #fff;
     position: absolute;
     z-index: 100;
@@ -20,7 +20,7 @@ ul {
     padding: 5px 5px 0 5px;
     width: inherit;
 }
-ul li{
+.cities>li{
     text-align: right;
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
