@@ -97,17 +97,17 @@ class Products extends Component {
                     {/*phone-order-section*/}
                     <div className="col-md-2 bg-white">
                         <div className="card PhoneOrder-card my-3" dir="rtl">
-                            <div className="card-body text-center" >
-                                <h5 className="card-title text-right">سفارش تلفنی </h5>
-                                <p className="card-text text-right">ثبت سفارش تلفنی این گوسفند زنده</p>
+                            <div className="card-body text-right" >
+                                <h5 className="card-title">سفارش تلفنی </h5>
+                                <p className="card-text">ثبت سفارش تلفنی این گوسفند زنده</p>
                             </div>
                         </div>
-                        <img src={sheep} className="stick d-none d-lg-block" alt=""/>
+                        <img src={sheep} className="stick d-none d-md-block" alt=""/>
                     </div>
                     {/*online-order-section*/}
                     <div className="col-md-10 ">
                         <h5 className="text-right top gold"> سفارش آنلاین</h5>
-                        <div className="row bg-white mr-1 justify-content-around">
+                        <div className="row bg-white mr-1 justify-content-between">
                             {this.renderProducts()}
                         </div>
                         <ul className="pageNumbers justify-content-center my-5">
